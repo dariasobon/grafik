@@ -1,34 +1,15 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
-        grafik
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <Header />
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Header from '../components/Header.vue'
+export default {
+  components: { Header },}
 </script>
 
 <style>
@@ -37,8 +18,6 @@ export default {}
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .title {
